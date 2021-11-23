@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scalet=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./css/form.css">
+</head>
+
+<body>
+
+    <h2>Contact Me</h2>
+    <hr>
+    <form action="" method="POST">
+        <div class="container">
+            <div class="row">
+                <div class="col-25">
+                    <label for="yourname">Your Name:</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="yourname" placeholder="Please enter your name...">
+                    <br><span id="errorname" class="error"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="yemail">Your Email:</label>
+                </div>
+                <div class="col-75">
+                    <input type="email" id="yemail" placeholder="Please enter your email...">
+                    <br><span id="erroremail" class="error"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="sject">Subject:</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="sject">
+                    <br><span id="errorsubject" class="error"></span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="message">Message</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="message" style="height:200px"></textarea>
+                    <br><span id="errormess" class="error"></span>
+                </div>
+            </div>
+            <div class="row">
+                <input onclick="getInfo(); return false;" type="submit" value="Send Message">
+
+            </div>
+
+
+        </div>
+        </div>
+    </form>
+    <script src="./Js/contact.js "></script>
+</body>
+
+</html>

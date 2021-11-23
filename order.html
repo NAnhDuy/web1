@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scalet=1.0">
+    <title>Order</title>
+    <link rel="stylesheet" href="./css/form.css">
+</head>
+
+<body>
+    <h2>Tour Travel</h2>
+    <hr>
+    <form action="" method="GET">
+        <div class="container">
+            <div class="row">
+                <div class="col-25">
+                    <label for="tourtravel">Tour Travel</label>
+                </div>
+                <div class="col-75">
+                    <select id="tourtravel" name="tourtravel">
+                    <option value="hokkaido">Hokkaido</option>
+                    <option value="kyoto">Kyoto</option>
+                    <option value="osaka">Osaka</option>
+                 </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="yourname">Your Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="yourname" name="yourname" placeholder="Please enter your name...">
+                    <br><span id="errorname" class="error"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="note">Address</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="note" name="note">
+                    <br><span id="errornote" class="error"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="gowith">Go With?</label>
+                </div>
+                <div class="col-75">
+                    <input type="checkbox" value="family">Family<br>
+                    <input type="checkbox" value="friend">Friend<br>
+                    <input type="checkbox" value="personaltravel">Personal Travel
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="day">Date of tour start: </label>
+                </div>
+                <br>
+                <div class="col-75">
+                    <input type="date" id="daytogo" name="daytogo" value="yyyy/mm/dd">
+                    <br><span id="errorday" class="error"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="other">Message</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+                    <br><span id="errormess" class="error"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="food">Do you have any food allergy?</label>
+                </div>
+                <br>
+                <div class="col-75">
+                    <input type="radio" id="food" name="food" value="yes"> Yes
+                    <input type="radio" id="food" name="food" value="no"> No
+                </div>
+            </div>
+            <div class="row">
+                <input onclick="getInfo(); return false;" type="submit" value="Send">
+            </div>
+        </div>
+    </form>
+    <script src="./Js/order.js"></script>
+</body>
+
+</html>
